@@ -1,4 +1,10 @@
-const Todo = ({ setTodoList, setTodoText, todoText }) => {
+import { useContext, useState } from "react";
+import { TodoContext } from "./App";
+const Todo = () => {
+  const { setTodoList } = useContext(TodoContext);
+  // console.log(data);
+
+  const [todoText, setTodoText] = useState("");
   const handelChange = (e) => {
     const data = e.target.value;
     setTodoText(data);
@@ -13,7 +19,6 @@ const Todo = ({ setTodoList, setTodoText, todoText }) => {
     setTodoList((prev) => [...prev, final]);
     setTodoText("");
   };
-
   return (
     <div>
       <h4>Create TODO list</h4>
