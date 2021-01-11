@@ -3,6 +3,10 @@ import List from "./list";
 import Navbar from "./navbar";
 import Todo from "./todo";
 
+// export const TodoContext = createContext({
+//   todoList: [{ id: 1, text: "hello" }],
+//   setTodoList: function name(params) {},
+// });
 export const TodoContext = createContext(undefined);
 const App = () => {
   const [todoList, setTodoList] = useState([]);
