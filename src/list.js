@@ -1,5 +1,5 @@
 import React from "react";
-import { TodoContext } from "./App";
+import { TodoContext } from "./context";
 
 const List = () => {
   return (

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { TodoContext } from "./App";
+import { TodoContext } from "./context";
 const Todo = () => {
   const { setTodoList } = useContext(TodoContext);
   // console.log(data);
