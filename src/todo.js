@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { TodoContext } from "./App";
+import { TodoDispatch } from "./App";
 const Todo = () => {
-  const { setTodoList } = useContext(TodoContext);
+  const setTodoList = useContext(TodoDispatch);
   // console.log(data);
 
   const [todoText, setTodoText] = useState("");
